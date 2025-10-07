@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old Fashion co - Premium Bartending Services for Weddings</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 39, 46, 0.9) 0%, rgba(17, 24, 39, 0.95) 100%);
-        }
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        .cocktail-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .btn-sparkle {
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-sparkle:hover::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
-            animation: sparkle 1.5s infinite;
-        }
-        @keyframes sparkle {
-            0% { transform: scale(0); opacity: 1; }
-            100% { transform: scale(1); opacity: 0; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old Fashion Co – Wedding Bartending</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f2ec;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2f1b12;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .package {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .package h2 {
+      color: #2f1b12;
+      margin-top: 0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2f1b12;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #4c2e1f;
+    }
+    footer {
+      background-color: #2f1b12;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .phone {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 font-sans">
-    <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full z-0"></div>
-    
-    <!-- Navigation -->
-    <nav class="relative z-10 bg-white/90 backdrop-blur-sm shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center shadow-lg">
-                            <i data-feather="droplet" class="text-white"></i>
-                        </div>
-                        <span class="ml-3 text-xl font-bold logo-text text-gray-800">Old Fashion co</span>
-                    </div>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-                
-         
+<body>
+  <header>
+    <h1>Old Fashion Co</h1>
+    <p>Wedding & Event Bartending | League City · Galveston County</p>
+  </header>
+
+  <div class="container">
+    <h2>Our Packages</h2>
+
+    <div class="package">
+      <h2>Basic Bar</h2>
+      <p>Includes 1 bartender, basic setup, ice, and mixers for up to 50 guests. Perfect for smaller weddings or private events.</p>
+      <p><strong>Starting at:</strong> $350</p>
+      <a href="tel:8323350930" class="button">📞 Book Now</a>
+      <a href="sms:8323350930" class="button">💬 Text Us</a>
+    </div>
+
+    <div class="package">
+      <h2>Premium Bar</h2>
+      <p>Includes 2 bartenders, full bar setup, premium mixers, garnishes, and glassware for up to 100 guests.</p>
+      <p><strong>Starting at:</strong> $650</p>
+      <a href="tel:8323350930" class="button">📞 Book Now</a>
+      <a href="sms:8323350930" class="button">💬 Text Us</a>
+    </div>
+
+    <div class="package">
+      <h2>Signature Old Fashioned</h2>
+      <p>Our signature package with custom cocktails, rustic mobile bar, LED lighting, and garnish bar for up to 150 guests.</p>
+      <p><strong>Starting at:</strong> $950</p>
+      <a href="tel:8323350930" class="button">📞 Book Now</a>
+      <a href="sms:8323350930" class="button">💬 Text Us</a>
+    </div>
+
+    <div class="package">
+      <h2>Custom Experience</h2>
+      <p>Want something unique? We’ll design a full-service bar experience just for your wedding or event.</p>
+      <p><strong>Call or text:</strong> <span class="phone">832-335-0930</span></p>
+      <a href="tel:8323350930" class="button">📞 Book Now</a>
+      <a href="sms:8323350930" class="button">💬 Text Us</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Old Fashion Co · All Rights Reserved</p>
+  </footer>
+</body>
+</html>
